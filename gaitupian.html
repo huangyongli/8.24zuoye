@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>改图片</title>
+</head>
+<body>
+<input  id="txt" type="text" value="">
+<input  id="btn" type="button" value="确认">
+<img id="img" src="img/1.jpg" width="300" height="300">
+</body>
+</html>
+<script>
+    var oTxt = document.getElementById("txt");
+    var oBtn = document.getElementById("btn");
+    var oImg = document.getElementById("img");
+
+    oBtn.onclick = function () {
+        oImg.src = oTxt.value
+    }
+</script>
